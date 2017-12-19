@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animate</title>
+	<style>
+		.demo{
+			height: 50px;
+			width: 50px;
+			background: teal;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+</body>
+<script src='../animate.js'></script>
+<script>
+	var oDiv=document.querySelector('.demo');
+
+	var div=new Animate(oDiv);
+	console.log(div);
+	div.start('left',300,1000,'easeIn');
+</script>
+</html>
