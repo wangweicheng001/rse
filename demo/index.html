@@ -68,7 +68,9 @@
 	document.querySelector('button').onmouseover=function(){
 		var self=this;
 		change(self);
-		
+	}
+	document.querySelector('button').onclick=function(){
+		moveCancel();
 	}
 	var createAnimate=function(){
 		var oDiv=createDom(); 
