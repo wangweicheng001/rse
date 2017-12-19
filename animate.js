@@ -56,6 +56,8 @@ Animate.prototype.start=function(propertyName,endPos,duration,easing){
 	var timeId=setInterval(function(){
 		if(self.step()===false){
 			clearInterval(timeId);
+			// self.dom.parentNode.removeChild(self.dom);
+			
 		}
 	},19)
 }

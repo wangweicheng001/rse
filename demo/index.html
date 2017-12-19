@@ -5,24 +5,77 @@
 	<title>Animate</title>
 	<style>
 		.demo{
-			height: 50px;
-			width: 50px;
+			height: 5px;
+			width: 5px;
+			border-radius: 5px;
 			background: teal;
 			position: absolute;
-			top: 0;
+			top: 95px;
 			left: 0;
+		}
+		#content{
+			height: 200px;
+			width: 500px;
+			position: absolute;
+			top: 50px;
+			left: 0px;
+			border:1px solid teal;
 		}
 	</style>
 </head>
 <body>
-	<div class="demo"></div>
+	<button>生成dom</button>
+	<div id="content"></div>
 </body>
 <script src='../animate.js'></script>
 <script>
-	var oDiv=document.querySelector('.demo');
+	var createDom=function(){
+		var dom=document.createElement('div');
+		dom.className='demo';
+		document.getElementById('content').appendChild(dom)
+		return dom;
+	}
+	var moveCancel=(function(){
+		var status=true,timer;
+		return function(){
+			if(status){
+				timer1=setInterval(createAnimate,2200);
+				timer2=setInterval(createAnimate,2400);
+				timer3=setInterval(createAnimate,2600);
+			}else{
+				clearInterval(timer1);
+				clearInterval(timer2);
+				clearInterval(timer3);
+			}
+			status=!status;
+		}
+	})()
 
-	var div=new Animate(oDiv);
-	console.log(div);
-	div.start('left',300,1000,'easeIn');
+	var newmove=function(){
+
+	}
+	var change=(function(){
+		var status=true,div;
+		return function(r){
+			if(status){
+				div=new Animate(r);
+				div.start('width',500,1000,'easeIn');
+			}
+			status=false;
+			return div;
+		}
+	})()
+	document.querySelector('button').onmouseover=function(){
+		var self=this;
+		change(self);
+		
+	}
+	var createAnimate=function(){
+		var oDiv=createDom(); 
+		var div=new Animate(oDiv);
+		div.start('left',500,1000,'easeIn');
+	}
+
+
 </script>
 </html>
