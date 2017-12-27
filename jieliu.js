@@ -1,5 +1,10 @@
-var arr=[];
-for(var i=0;i<1000;i++){
-	arr.push(i);
-}
-console.log(arr.join())
+console.log(1);
+setTimeout(function(){
+	
+	setTimeout(function(){
+		console.log(2)
+	},0)
+	console.log(3)
+},0)
+console.log(4)
+

@@ -5,10 +5,10 @@
 	<title>Animate</title>
 	<style>
 		.demo{
-			height: 5px;
-			width: 5px;
-			border-radius: 5px;
-			background: teal;
+			height: 10px;
+			width: 10px;
+			border-radius: 10px;
+			background: white;
 			position: absolute;
 			top: 95px;
 			left: 0;
@@ -16,6 +16,7 @@
 		#content{
 			height: 200px;
 			width: 500px;
+			background: navy;
 			position: absolute;
 			top: 50px;
 			left: 0px;
@@ -24,6 +25,7 @@
 	</style>
 </head>
 <body>
+	<img src="https://res.vmallres.com/pimages//sale/2017-12/20171226193811672.jpg" alt="">
 	<button>生成dom</button>
 	<div id="content"></div>
 </body>
@@ -59,7 +61,7 @@
 		return function(r){
 			if(status){
 				div=new Animate(r);
-				div.start('width',500,1000,'easeIn');
+				div.start('width',500,200,'easeIn');
 			}
 			status=false;
 			return div;
@@ -75,7 +77,7 @@
 	var createAnimate=function(){
 		var oDiv=createDom(); 
 		var div=new Animate(oDiv);
-		div.start('left',500,1000,'easeIn');
+		div.start('left',500,500,'easeIn');
 	}
 
 
