@@ -3,7 +3,7 @@
 
 自己学习 `CSS3` 的一个过程，没有将太多精力放在兼容性进行处理上，如果打开页面出现错位无法正常浏览，请使用最新版 `Chrome` 浏览器浏览打开。
 
-> 奇文共欣赏，疑义相与析。带着问题来也好，讨论各种黑科技、酷炫的 CSS 技术也行，[一键加 QQ 群讨论](//shang.qq.com/wpa/qunwpa?idkey=318940c0ae56f4556447291fb2fc6147a7b1760487c49c1e3410c377d946fc5a) 。
+> 奇文共欣赏，疑义相与析。带着问题来也好，讨论各种黑科技、酷炫的 CSS 技术也行 。
 
 ## 个人博客园相关博文：
 
@@ -86,15 +86,6 @@
 [圆锥渐变背景版](https://codepen.io/Chokcoco/pens/popular/9/)
 
 [纯 CSS 实现文字输入效果](https://codepen.io/Chokcoco/pen/WXGoGB)
-
-## Contact
-
-如果有任何问题或者疑问，可以加 QQ 群：418766876 联系我。
-
-也欢迎想讨论各种天马行空的 CSS 相关问题的小伙伴们加入。
-
-![qun](https://github.com/chokcoco/iCSS/blob/master/qqqun.png)
-
 
 ## License
 MIT
